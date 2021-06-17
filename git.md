@@ -60,7 +60,7 @@ Task | Git Command | Description
 Fetch changes | `git fetch` or `git fetch origin` | Fetches all changes in all branches from the remote origin repository and brings them into the local tracking branches (eg: origin/master). Does NOT merge the changes into your working local branches or alter your files
 Preview changes | `git diff master origin/master` | Preview changes before merging
 Merge changes | `git merge origin/master` | Merge changes from the local tracking branch (origin/master) into the local working branch (master). May produce merge conflicts at this point which need to be resolved.
-Pull changes | `git pull` or `git pull origin master` | Alternate to the fetch/merge process. Fetches and merges in one step. May product merge conflicts. Does not allow preview of changes before merging.
+Pull changes | `git pull` or `git pull origin master` | Alternate to the fetch/merge process. Fetches and merges in one step. May produce merge conflicts. Does not allow preview of changes before merging.
 
 ## Terms
 
