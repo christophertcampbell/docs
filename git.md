@@ -19,7 +19,7 @@ If you already have source files to check-in, you can now stage your files, comm
 
 Task | Git Command
 --- | ---
-Check out a repository | `git clone [repo_url]`
+Check out a repository | `git clone <repo_url>`
 
 ## View Local Changes
 
@@ -27,6 +27,7 @@ Task | Git Command
 --- | ---
 List un-committed, changed files | `git status` or `git diff --name-only`
 Diff changes | `git diff` (use `space` to advance pages, `q` to quit the diff)
+Diff pending changes in a file | `git diff HEAD <filename>`
 
 ## Stage / Un-Stage Local Changes
 
@@ -36,7 +37,7 @@ Stage all changes | `git add -A`
 Stage new and modified, without deleted | `git add .`
 Stage modified and deleted, without new | `git add -u`
 Un-Stage all changes | `git reset`
-Un-Stage a particular file or path | `git reset -- [filename]`
+Un-Stage a particular file or path | `git reset -- <filename>`
 
 ## Commit Staged Changes
 
@@ -62,6 +63,16 @@ Preview changes | `git diff master origin/master` | Preview changes before mergi
 Merge changes | `git merge origin/master` | Merge changes from the local tracking branch (origin/master) into the local working branch (master). May produce merge conflicts at this point which need to be resolved.
 Pull changes | `git pull` or `git pull origin master` | Alternate to the fetch/merge process. Fetches and merges in one step. May produce merge conflicts. Does not allow preview of changes before merging.
 
+## Configuration
+
+Task | Git Command
+--- | ---
+View user name | `git config [--global] user.name`
+View user email | `git config [--global] user.email`
+Update user name | `git config [--global] user.name <name>`
+Update user email | `git config [--global] user.email <email>`
+View all settings | `git config [--global] --list`
+
 ## Terms
 
 Term | Description
@@ -72,6 +83,7 @@ origin/master | A remote-tracking branch (eg: a local copy of the branch named "
 
 ## Good Articles and Resources
 
-* <https://longair.net/blog/2009/04/16/git-fetch-and-merge/>
 * <https://git-scm.com/book/en/v2/>
+* <https://www.atlassian.com/git/tutorials>
 * <https://www.git-tower.com/learn/git/ebook/>
+* <https://longair.net/blog/2009/04/16/git-fetch-and-merge/>
